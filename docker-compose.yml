@@ -3,16 +3,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: solorithm-com
+    container_name: EaseIP-com
     ports:
-      - "4325:4323"
+      - "4332:4323"
     restart: unless-stopped
     networks:
       - frontend
     environment:
       - USE_CLOUDFLARE=false
       - NODE_ENV=production
-      - SITE_URL=https://solorithm.com
+      - SITE_URL=https://easeip.induslevel.com
 
 networks:
   frontend:

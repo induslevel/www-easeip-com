@@ -1,7 +1,7 @@
 {
-  "name": "solorithm-website",
+  "name": "easeip-website",
   "version": "1.0.0",
-  "description": "Solorithm Official Website and Portfolio",
+  "description": "Ease IP - A Trusted Partner in Patent Engineering Services",
   "type": "module",
   "scripts": {
     "dev": "NODE_ENV=development ASTRO_TELEMETRY_DISABLED=1 astro dev --port 4323",

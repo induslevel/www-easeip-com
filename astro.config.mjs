@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const isCloudflare = process.env.USE_CLOUDFLARE !== 'false';
 
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://solorithm.com',
+  site: process.env.SITE_URL || 'https://easeip.induslevel.com',
   output: 'static',
   adapter: undefined,
   integrations: [sitemap(), watermarkIntegration({ opacity: 20 })],
