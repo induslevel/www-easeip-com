@@ -14,6 +14,9 @@ export default defineConfig({
   adapter: undefined,
   integrations: [sitemap(), watermarkIntegration({ opacity: 20 })],
   vite: {
+    preview: {
+      allowedHosts: true
+    },
     plugins: [
       tailwindcss(),
       {
