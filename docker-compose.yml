@@ -1,0 +1,19 @@
+services:
+  astro-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: solorithm-com
+    ports:
+      - "4325:4323"
+    restart: unless-stopped
+    networks:
+      - frontend
+    environment:
+      - USE_CLOUDFLARE=false
+      - NODE_ENV=production
+      - SITE_URL=https://solorithm.com
+
+networks:
+  frontend:
+    external: true

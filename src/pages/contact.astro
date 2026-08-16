@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us | Ease IP">
+  <main class="container mx-auto px-4 py-12 max-w-5xl flex-grow w-full">
+    <div class="mb-8 flex items-center justify-between">
+      <h1 class="text-4xl font-extrabold text-foreground">Contact Us</h1>
+      <a href="/" class="text-accent hover:underline font-medium text-sm">← Back to Home</a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+      <!-- Left column: Contact Form -->
+      <div class="lg:col-span-3 bg-card border border-border p-6 sm:p-8 rounded-xl shadow-sm">
+        <h2 class="text-xl font-bold mb-6 text-foreground">Send us a message</h2>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-foreground mb-1">Name</label>
+              <input type="text" id="name" required class="w-full p-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-foreground mb-1">Email</label>
+              <input type="email" id="email" required class="w-full p-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent">
+            </div>
+          </div>
+
+          <div>
+            <label for="firm" class="block text-sm font-medium text-foreground mb-1">Law Firm / Company</label>
+            <input type="text" id="firm" required class="w-full p-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent" placeholder="e.g. Apex Patent Group">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-foreground mb-1">Message</label>
+            <textarea id="message" required class="w-full p-3 rounded-lg border border-border bg-background text-foreground h-32 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Detail your patent drafting, searching, or FTE needs..."></textarea>
+          </div>
+
+          <div>
+            <button type="submit" style="background-color: var(--brand-500); color: #ffffff;" class="font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-opacity flex items-center justify-center gap-2 w-full sm:w-auto shadow-md">
+              Send Message
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right column: Global Desks -->
+      <div class="lg:col-span-2 space-y-6">
+        <div>
+          <h2 class="text-xl font-bold text-foreground mb-1">Global Presence</h2>
+          <p class="text-sm text-muted-foreground mb-4">Overnight Turnaround & 24-Hour Patent Workflows</p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- United States -->
+          <div class="bg-card border border-border p-4 rounded-xl shadow-sm">
+            <span class="block text-[10px] text-muted-foreground font-bold uppercase tracking-wider mb-1">United States</span>
+            <p class="font-bold text-sm text-foreground">Denver, Colorado Office</p>
+            <p class="text-xs text-muted-foreground mt-1">📍 3532 N. Franklin St, Suite A, Denver, CO 80205</p>
+            <p class="text-xs text-foreground-secondary mt-1">📞 +1 (555) 123-4567</p>
+          </div>
+
+          <!-- Pakistan -->
+          <div class="bg-card border border-border p-4 rounded-xl shadow-sm">
+            <span class="block text-[10px] text-muted-foreground font-bold uppercase tracking-wider mb-1">Pakistan</span>
+            <p class="font-bold text-sm text-foreground">Lahore Operations Desk</p>
+            <p class="text-xs text-foreground-secondary mt-2">📞 +92 (300) 123-4567</p>
+          </div>
+
+          <!-- India -->
+          <div class="bg-card border border-border p-4 rounded-xl shadow-sm">
+            <span class="block text-[10px] text-muted-foreground font-bold uppercase tracking-wider mb-1">India</span>
+            <p class="font-bold text-sm text-foreground">New Delhi Desk</p>
+            <p class="text-xs text-foreground-secondary mt-2">📞 +91 (987) 654-3210</p>
+          </div>
+
+          <!-- Philippines -->
+          <div class="bg-card border border-border p-4 rounded-xl shadow-sm">
+            <span class="block text-[10px] text-muted-foreground font-bold uppercase tracking-wider mb-1">Philippines</span>
+            <p class="font-bold text-sm text-foreground">Manila Operations Desk</p>
+            <p class="text-xs text-foreground-secondary mt-2">📞 +63 (912) 345-6789</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

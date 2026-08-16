@@ -1,0 +1,102 @@
+---
+import ThemeSelectorDropdown from './ThemeSelectorDropdown.astro';
+import ThemeToggle from './ThemeToggle.astro';
+---
+
+<header class="container mx-auto px-4 py-4 max-w-6xl relative z-50">
+  <div class="flex justify-between items-center bg-card border border-border p-3 sm:p-4 rounded-xl shadow-md relative">
+    
+    <!-- Left Side: Mobile Contact & Logo -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Logo -->
+      <a href="/" style="border-color: var(--brand-500); color: var(--brand-500);" class="flex items-center justify-center h-10 w-[115px] sm:w-auto gap-1 sm:gap-2 px-1 sm:px-3 rounded-xl border bg-accent/10 hover:bg-accent/20 transition-all active:scale-[0.96] shadow-sm">
+        <span class="font-mono text-sm sm:text-base font-extrabold tracking-tight whitespace-nowrap block">Ease IP</span>
+      </a>
+
+      <!-- Mobile Contact Button (Visible on small screens) -->
+      <a href="/contact" style="background-color: var(--brand-500); color: #ffffff;" class="lg:hidden h-10 w-[115px] sm:w-auto flex items-center justify-center px-4 rounded-xl font-extrabold text-xs transition-all hover:opacity-90 active:scale-[0.96] shadow-sm">
+        Contact
+      </a>
+    </div>
+    
+    <!-- Desktop Navigation Menu (Visible on medium screens and up) -->
+    <nav class="hidden lg:flex items-center gap-1.5 xl:gap-2.5">
+      <a href="/" style="border-color: var(--brand-500);" class="border text-xs xl:text-sm font-semibold h-10 flex items-center px-3 rounded-lg hover:bg-accent/10 hover:text-accent transition-all shadow-sm">Home</a>
+      <a href="/#about" style="border-color: var(--brand-500);" class="border text-xs xl:text-sm font-semibold h-10 flex items-center px-3 rounded-lg hover:bg-accent/10 hover:text-accent transition-all shadow-sm">About Us</a>
+      <a href="/#services" style="border-color: var(--brand-500);" class="border text-xs xl:text-sm font-semibold h-10 flex items-center px-3 rounded-lg hover:bg-accent/10 hover:text-accent transition-all shadow-sm">Services</a>
+      <a href="/#technologies" style="border-color: var(--brand-500);" class="border text-xs xl:text-sm font-semibold h-10 flex items-center px-3 rounded-lg hover:bg-accent/10 hover:text-accent transition-all shadow-sm">Technologies</a>
+      <a href="/#professionals" style="border-color: var(--brand-500);" class="border text-xs xl:text-sm font-semibold h-10 flex items-center px-3 rounded-lg hover:bg-accent/10 hover:text-accent transition-all shadow-sm">Professionals</a>
+      <a href="/#join" style="border-color: var(--brand-500);" class="border text-xs xl:text-sm font-semibold h-10 flex items-center px-3 rounded-lg hover:bg-accent/10 hover:text-accent transition-all shadow-sm">Join Team</a>
+    </nav>
+
+    <!-- Desktop Controls & Contact (Large screens) -->
+    <div class="hidden lg:flex items-center gap-3">
+      <ThemeSelectorDropdown />
+      <div class="w-px h-6 bg-border mx-1"></div>
+      <ThemeToggle />
+      <a href="/contact" style="background-color: var(--brand-500); color: #ffffff;" class="h-10 flex items-center justify-center px-5 rounded-xl font-extrabold text-sm transition-all hover:opacity-90 active:scale-[0.96] shadow-sm ml-2">
+        Contact
+      </a>
+    </div>
+
+    <!-- Mobile Burger Menu Button (Visible on small screens) -->
+    <div class="lg:hidden flex items-center gap-2">
+      <ThemeToggle />
+      <button id="mobile-menu-trigger" aria-label="Open menu" aria-expanded="false" class="h-10 w-10 flex items-center justify-center rounded-xl text-foreground hover:text-accent hover:bg-secondary transition-colors border border-transparent shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      
+      <!-- Mobile Dropdown Panel -->
+      <div id="mobile-menu-panel" class="absolute top-full left-0 right-0 mt-2 rounded-xl border border-border bg-background shadow-lg p-4 hidden space-y-4 max-h-[85vh] overflow-y-auto">
+        <nav class="flex flex-col gap-2">
+          <a href="/" style="border-color: var(--brand-500);" class="border text-sm font-semibold hover:text-accent px-3 py-2 rounded-lg hover:bg-accent/10 transition-all">Home</a>
+          <a href="/#about" style="border-color: var(--brand-500);" class="border text-sm font-semibold hover:text-accent px-3 py-2 rounded-lg hover:bg-accent/10 transition-all">About Us</a>
+          <a href="/#services" style="border-color: var(--brand-500);" class="border text-sm font-semibold hover:text-accent px-3 py-2 rounded-lg hover:bg-accent/10 transition-all">Services</a>
+          <a href="/#technologies" style="border-color: var(--brand-500);" class="border text-sm font-semibold hover:text-accent px-3 py-2 rounded-lg hover:bg-accent/10 transition-all">Technologies</a>
+          <a href="/#professionals" style="border-color: var(--brand-500);" class="border text-sm font-semibold hover:text-accent px-3 py-2 rounded-lg hover:bg-accent/10 transition-all">Professionals</a>
+          <a href="/#join" style="border-color: var(--brand-500);" class="border text-sm font-semibold hover:text-accent px-3 py-2 rounded-lg hover:bg-accent/10 transition-all">Join Team</a>
+        </nav>
+        
+        <div class="flex items-center justify-between pt-3 border-t border-border">
+          <span class="text-xs font-medium text-foreground">Theme Color</span>
+          <ThemeSelectorDropdown />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<script>
+  function initMobileMenu() {
+    const trigger = document.getElementById('mobile-menu-trigger');
+    const panel = document.getElementById('mobile-menu-panel');
+    
+    if (trigger && panel) {
+      if (!trigger.dataset.init) {
+        trigger.dataset.init = 'true';
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isHidden = panel.classList.contains('hidden');
+          if (isHidden) {
+            panel.classList.remove('hidden');
+            trigger.setAttribute('aria-expanded', 'true');
+          } else {
+            panel.classList.add('hidden');
+            trigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        document.addEventListener('click', () => {
+          panel.classList.add('hidden');
+          trigger.setAttribute('aria-expanded', 'false');
+        });
+      }
+    }
+  }
+
+  document.addEventListener('astro:page-load', initMobileMenu);
+  initMobileMenu();
+</script>

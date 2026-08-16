@@ -1,0 +1,359 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    title: 'Patent Searching & Prior Art',
+    desc: 'Performing meticulous, high-quality prior art searches to evaluate patentability, state-of-the-art landscapes, and freedom-to-operate (FTO).'
+  },
+  {
+    title: 'Patent Drafting Support',
+    desc: 'Assisting in preparing detailed, highly technical, and defensively strong patent specifications and drawing schematics.'
+  },
+  {
+    title: 'Office Action Responses',
+    desc: 'Supporting licensed U.S. practitioners by drafting comprehensive technical responses, arguments, and amendments for USPTO office actions.'
+  },
+  {
+    title: 'Patent Research & Analysis',
+    desc: 'Conducting in-depth technical research, claim mapping, and infringement analyses to strengthen your intellectual property portfolio.'
+  },
+  {
+    title: 'Docketing & Paralegal Support',
+    desc: 'Streamlining your practice with reliable docket management, shell preparation, form generation, and administrative support.'
+  },
+  {
+    title: 'IDS Preparation & Filing Services',
+    desc: 'Meticulously preparing Information Disclosure Statements (IDS), tracking references, and organizing documents for USPTO compliance.'
+  }
+];
+
+const technologies = [
+  {
+    title: 'Electrical Engineering',
+    desc: 'From complex integrated circuit design to cutting-edge semiconductor innovation, our experts translate intricate schematics into strong, defensible patents.'
+  },
+  {
+    title: 'Computer Science & Software',
+    desc: 'Specializing in software, AI/ML models, cloud architecture, cybersecurity, and blockchain. We understand algorithms and help build high-quality applications meeting strict USPTO requirements.'
+  },
+  {
+    title: 'Hardware & Embedded Systems',
+    desc: 'Detailed drafting and search support across consumer electronics, mixed-signal hardware, and IoT devices, ensuring technical precision and rapid delivery.'
+  },
+  {
+    title: 'Mechanical Engineering',
+    desc: 'From CAD interpretation to detailed structural drafting, we bring maximum clarity and precision to filings involving gears, tools, and complex machinery.'
+  }
+];
+
+const reasons = [
+  {
+    title: 'Precision That Earns Trust',
+    desc: 'Every search, draft, and response is delivered to meet the strict quality benchmarks of U.S. patent attorneys. No shortcuts, no rework.'
+  },
+  {
+    title: 'Fluent in Patent Engineering',
+    desc: 'Our global team consists of specialized engineers who speak the language of patents, requiring minimal hand-holding to deliver technically sound documents.'
+  },
+  {
+    title: 'Scalable on Your Terms',
+    desc: 'Whether you need support with a single case or a fleet of twenty, our per-piece and FTE models let you scale up or down effortlessly.'
+  },
+  {
+    title: 'The Time Zone Advantage',
+    desc: 'With teams across the US, India, Pakistan, and the Philippines, we enable a 24-hour cycle. You sleep, we work, enabling overnight turnarounds.'
+  },
+  {
+    title: 'Strictly B2B for Practitioners',
+    desc: 'We do not offer legal advice or represent inventors directly. We work exclusively with licensed professionals to provide pure, non-crossing technical support.'
+  }
+];
+---
+
+<Layout title="Ease IP | Trusted Patent Engineering Services">
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="container mx-auto px-4 pt-16 pb-20 max-w-5xl text-center relative overflow-hidden rounded-[2rem] mt-6 border border-border/50 shadow-sm bg-gradient-to-br from-card to-secondary/10">
+      <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+        <span style="color: var(--brand-500); background-color: var(--brand-500); --tw-bg-opacity: 0.1;" class="inline-block px-4 py-1 text-xs font-bold rounded-full tracking-wider uppercase mb-2">
+          U.S. Patent Engineering Support
+        </span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tight">
+          A Trusted Partner in <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Patent Engineering</span>
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-foreground-secondary leading-relaxed max-w-2xl mx-auto">
+          Supporting licensed U.S. patent attorneys and law firms with world-class, round-the-clock technical expertise.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+          <a href="#services" style="background-color: var(--brand-500); color: #ffffff;" class="px-6 py-3 rounded-xl font-extrabold text-sm transition-all hover:opacity-95 shadow-md shadow-accent/20">
+            Our Services
+          </a>
+          <a href="#join" style="border-color: var(--brand-500); color: var(--brand-500);" class="px-6 py-3 rounded-xl border font-bold text-sm hover:bg-accent/5 transition-all">
+            Join Our Team
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-20 max-w-5xl space-y-12">
+      <div class="text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">About Ease IP</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-foreground">Empowering Practitioners Globally</h2>
+        <p class="text-foreground-secondary max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+          We handle the heavy lifting of technical drafting, research, and prosecution support, allowing law firms to focus entirely on legal strategy.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div class="bg-card border border-border p-8 rounded-2xl flex flex-col justify-between space-y-6">
+          <h3 class="text-2xl font-bold text-foreground">Professional Alignment</h3>
+          <p class="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+            Unlike other providers, we do not offer legal advice or interact directly with independent inventors. We strictly partner with licensed U.S. practitioners, ensuring top-tier engineering support without ever crossing regulatory boundaries.
+          </p>
+          <div class="pt-4">
+            <span class="text-xs font-bold text-muted-foreground uppercase block mb-1">Our Footprint</span>
+            <p class="text-sm font-semibold text-foreground">United States • India • Pakistan • Philippines</p>
+          </div>
+        </div>
+
+        <div class="bg-card border border-border p-8 rounded-2xl flex flex-col justify-between space-y-6">
+          <h3 class="text-2xl font-bold text-foreground">Engagement Models</h3>
+          <p class="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+            We adapt entirely to your workload. Choose between a flexible, case-by-case **Per-Piece Model** on demand, or secure dedicated **Full-Time Equivalent (FTE) patent engineers** to act as a seamless extension of your internal team.
+          </p>
+          <div class="pt-4">
+            <a href="#contact" style="background-color: var(--brand-500); color: #ffffff;" class="inline-block px-5 py-2.5 rounded-xl font-bold text-xs transition-all hover:opacity-90">
+              Request Engagement Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-secondary/10 dark:bg-secondary/5 border-y border-border/50 py-20">
+      <div class="container mx-auto px-4 max-w-5xl space-y-12">
+        <div class="text-center space-y-3">
+          <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">Capabilities</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-foreground">Our Specialised Services</h2>
+          <p class="text-foreground-secondary max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+            We deliver pure technical precision across the entire lifecycle of patent drafting and prosecution.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => (
+            <div class="bg-card border border-border p-6 rounded-2xl shadow-sm hover:border-accent hover:shadow-md transition-all duration-150 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <h3 class="text-lg font-bold text-foreground leading-snug">{service.title}</h3>
+                <p class="text-xs sm:text-sm text-foreground-secondary leading-relaxed">{service.desc}</p>
+              </div>
+              <a href="#contact" class="text-xs font-bold text-accent hover:underline flex items-center gap-1 mt-2">
+                Inquire Service <span>→</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="container mx-auto px-4 py-20 max-w-5xl space-y-12">
+      <div class="text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">Expertise</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-foreground">Supported Technology Domains</h2>
+        <p class="text-foreground-secondary max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+          Our global team includes engineers fluent in advanced technologies, ensuring accurate translation of designs into solid patents.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {technologies.map((tech) => (
+          <div class="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-sm space-y-4">
+            <h3 class="text-xl font-bold text-foreground flex items-center gap-2">
+              <span style="background-color: var(--brand-500);" class="w-2.5 h-2.5 rounded-full shrink-0"></span>
+              {tech.title}
+            </h3>
+            <p class="text-sm text-foreground-secondary leading-relaxed">{tech.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-secondary/10 dark:bg-secondary/5 border-y border-border/50 py-20">
+      <div class="container mx-auto px-4 max-w-5xl space-y-12">
+        <div class="text-center space-y-3">
+          <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">The Advantage</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-foreground">Why Law Firms Choose Ease IP</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {reasons.map((reason) => (
+            <div class="bg-card border border-border p-6 rounded-2xl space-y-3 shadow-sm">
+              <h3 class="font-bold text-foreground text-base sm:text-lg flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                </svg>
+                {reason.title}
+              </h3>
+              <p class="text-xs sm:text-sm text-foreground-secondary leading-relaxed pl-7">{reason.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Professionals Section -->
+    <section id="professionals" class="container mx-auto px-4 py-20 max-w-5xl space-y-12">
+      <div class="text-center space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">Professionals</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-foreground">Leadership & Leadership Team</h2>
+        <p class="text-foreground-secondary max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+          Led by experienced patent professionals committed to maintaining strict U.S. patent standards.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-card border border-border p-6 rounded-2xl text-center space-y-4 shadow-sm group">
+          <div class="w-24 h-24 rounded-full bg-secondary/30 mx-auto flex items-center justify-center font-bold text-2xl text-accent border border-border">
+            TF
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-foreground">Thomas Franklin</h3>
+            <span class="text-xs font-bold text-muted-foreground uppercase">Senior Patent Advisor</span>
+          </div>
+          <p class="text-xs sm:text-sm text-foreground-secondary leading-relaxed">
+            Bringing decades of U.S. patent prosecution and drafting expertise across complex software and hardware fields.
+          </p>
+        </div>
+
+        <div class="bg-card border border-border p-6 rounded-2xl text-center space-y-4 shadow-sm group">
+          <div class="w-24 h-24 rounded-full bg-secondary/30 mx-auto flex items-center justify-center font-bold text-2xl text-accent border border-border">
+            UM
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-foreground">Usman Mughal</h3>
+            <span class="text-xs font-bold text-muted-foreground uppercase">Managing Director</span>
+          </div>
+          <p class="text-xs sm:text-sm text-foreground-secondary leading-relaxed">
+            Leading the patent engineering, analysis, and global operations desk to guarantee high-quality deliverables.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Our Team Section -->
+    <section id="join" class="bg-secondary/10 dark:bg-secondary/5 border-y border-border/50 py-20">
+      <div class="container mx-auto px-4 max-w-5xl grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">Careers</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-foreground leading-tight">Join Our Global Team</h2>
+          <p class="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+            We are always looking for skilled patent engineers, drafters, and researchers to join Ease IP. Work alongside top U.S. patent practitioners on cutting-edge technologies (AI, semiconductors, mechanical tools) with structured, flexible work hours.
+          </p>
+          <ul class="space-y-3 text-sm text-foreground-secondary">
+            <li class="flex items-center gap-2 font-medium">
+              <span style="background-color: var(--brand-500);" class="w-1.5 h-1.5 rounded-full shrink-0"></span> Work That Matters (AI, Software, Hardware)
+            </li>
+            <li class="flex items-center gap-2 font-medium">
+              <span style="background-color: var(--brand-500);" class="w-1.5 h-1.5 rounded-full shrink-0"></span> Learn U.S. Patent Prosecution Standards
+            </li>
+            <li class="flex items-center gap-2 font-medium">
+              <span style="background-color: var(--brand-500);" class="w-1.5 h-1.5 rounded-full shrink-0"></span> Flexible & Structured Engagement Styles
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-6">
+          <div class="bg-card border border-border p-6 rounded-2xl shadow-md space-y-4">
+            <h3 class="text-xl font-bold text-foreground">Apply as a Professional</h3>
+            <form class="space-y-3">
+              <div>
+                <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Full Name</label>
+                <input type="text" placeholder="Your Name" required class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Email Address</label>
+                <input type="email" placeholder="you@company.com" required class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Experience Level</label>
+                <input type="text" placeholder="e.g. Patent Drafter, Mechanical Engineer" class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Brief Pitch / Cover Note</label>
+                <textarea rows="3" placeholder="Tell us about your patent background..." class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent"></textarea>
+              </div>
+              <button type="submit" style="background-color: var(--brand-500); color: #ffffff;" class="w-full font-bold py-3 rounded-xl transition-all hover:opacity-95 shadow-sm">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-20 max-w-5xl grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+      <div class="md:col-span-5 space-y-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-muted-foreground">Inquiries</span>
+        <h2 class="text-3xl font-extrabold text-foreground">Get in Touch</h2>
+        <p class="text-sm text-foreground-secondary leading-relaxed">
+          Contact our consulting and engagement desk for case-by-case queries, FTE availability, or custom collaborations.
+        </p>
+
+        <div class="space-y-4 pt-4 border-t border-border">
+          <div class="space-y-1">
+            <span class="text-[10px] text-muted-foreground font-bold uppercase tracking-wider block">United States Office</span>
+            <span class="text-sm font-semibold text-foreground block">Denver, Colorado</span>
+            <span class="text-xs text-foreground-secondary block">📞 +1 (555) 123-4567</span>
+          </div>
+          <div class="space-y-1">
+            <span class="text-[10px] text-muted-foreground font-bold uppercase tracking-wider block">Pakistan Desk</span>
+            <span class="text-xs text-foreground-secondary block">📞 +92 (300) 123-4567</span>
+          </div>
+          <div class="space-y-1">
+            <span class="text-[10px] text-muted-foreground font-bold uppercase tracking-wider block">India Desk</span>
+            <span class="text-xs text-foreground-secondary block">📞 +91 (987) 654-3210</span>
+          </div>
+          <div class="space-y-1">
+            <span class="text-[10px] text-muted-foreground font-bold uppercase tracking-wider block">Philippines Desk</span>
+            <span class="text-xs text-foreground-secondary block">📞 +63 (912) 345-6789</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-md space-y-4">
+          <h3 class="text-xl font-bold text-foreground">Request Engagement Call</h3>
+          <form class="space-y-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Name</label>
+                <input type="text" placeholder="Your Name" required class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Firm Email</label>
+                <input type="email" placeholder="you@firm.com" required class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Law Firm / Company</label>
+              <input type="text" placeholder="e.g. Apex Patent Group" required class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-muted-foreground uppercase mb-1">Message</label>
+              <textarea rows="4" placeholder="Detail your drafting support or search needs..." required class="w-full bg-background border border-border p-2.5 rounded-xl text-sm focus:outline-none focus:border-accent"></textarea>
+            </div>
+            <button type="submit" style="background-color: var(--brand-500); color: #ffffff;" class="w-full font-bold py-3 rounded-xl transition-all hover:opacity-95 shadow-sm">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
